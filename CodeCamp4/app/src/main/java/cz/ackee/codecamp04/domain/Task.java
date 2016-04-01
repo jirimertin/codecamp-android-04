@@ -32,7 +32,6 @@ public class Task implements Parcelable {
         dest.writeString(this.task);
     }
 
-    // Parcelable plugin
     protected Task(Parcel in) {
         this.task = in.readString();
     }

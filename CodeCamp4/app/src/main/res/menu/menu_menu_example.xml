@@ -16,4 +16,13 @@
         android:id="@+id/nav_settings"
         android:title="@string/drawer_title_settings"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_settings_1"
+        android:title="@string/drawer_title_settings_1"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/nav_settings_2"
+        android:title="@string/drawer_title_settings_2"
+        app:showAsAction="never"/>
 </menu>

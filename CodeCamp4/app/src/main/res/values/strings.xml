@@ -22,4 +22,7 @@
     <string name="menu_actions_share_clicked">Kliknuti na share!</string>
     <string name="menu_actions_check_clicked">Kliknuti na check!</string>
     <string name="drawer_navigation_title">CodeCamp 04</string>
+    <string name="drawer_title_settings_1">Item 1</string>
+    <string name="drawer_title_settings_2">Item 2</string>
+    <string name="drawer_title_homework_v2">Homework v2</string>
 </resources>

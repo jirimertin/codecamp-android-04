@@ -47,13 +47,13 @@ public class TaskListViewAdapter extends BaseAdapter {
 
         // Recyclace viewholederu
         ViewHolder viewHolder;
-//        if (convertView == null) {
+        if (convertView == null) {
             convertView = LayoutInflater.from(ctx).inflate(R.layout.item_task, parent, false);
             viewHolder = new ViewHolder(convertView);
             convertView.setTag(viewHolder);
-//        } else {
-//            viewHolder = (ViewHolder) convertView.getTag();
-//        }
+        } else {
+            viewHolder = (ViewHolder) convertView.getTag();
+        }
 
         viewHolder.textTask.setText(getItem(position).getTask());
 

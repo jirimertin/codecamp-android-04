@@ -17,6 +17,7 @@ import android.view.inputmethod.InputMethodManager;
 import cz.ackee.codecamp04.R;
 import cz.ackee.codecamp04.ui.fragment.DetailFragment;
 import cz.ackee.codecamp04.ui.fragment.HomeworkFragment;
+import cz.ackee.codecamp04.ui.fragment.HomeworkV2Fragment;
 import cz.ackee.codecamp04.ui.fragment.MenuActionsFragment;
 import cz.ackee.codecamp04.ui.fragment.ViewPagerFragment;
 
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         setupToolbar();
-
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
 
@@ -91,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
+
+        // Listener na vybirani menu itemu
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
@@ -118,6 +120,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_detail:
                 f = new DetailFragment();
+                break;
+            case R.id.nav_homework_v2:
+                f = new HomeworkV2Fragment();
                 break;
         }
 

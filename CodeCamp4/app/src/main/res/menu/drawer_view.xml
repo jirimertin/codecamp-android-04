@@ -14,5 +14,8 @@
         <item
             android:id="@+id/nav_detail"
             android:title="@string/drawer_title_detail"/>
+        <item
+            android:id="@+id/nav_homework_v2"
+            android:title="@string/drawer_title_homework_v2"/>
     </group>
 </menu>

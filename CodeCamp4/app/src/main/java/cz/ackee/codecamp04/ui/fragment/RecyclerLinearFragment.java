@@ -3,6 +3,7 @@ package cz.ackee.codecamp04.ui.fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,7 +38,7 @@ public class RecyclerLinearFragment extends Fragment {
         RecyclerView recycler = (RecyclerView) view.findViewById(R.id.recycler_tasks);
 
         // Musime nasetovat layout manager, jinak se nam recycler nezobrazi
-//        recycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
+        recycler.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
 
         if (savedInstanceState == null) {
             mTasks = TaskGenerator.generateTasks(500);
